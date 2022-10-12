@@ -1,0 +1,129 @@
+
+.header {
+    display: block;
+    position: relative;
+}
+
+.header-logo {
+    margin: 0;
+    text-align: center;
+}
+
+header i { 
+    position: absolute;
+    margin-top: 15px;
+    font-size: x-large;
+
+}
+
+
+.banner img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    max-height: 32rem;
+
+}
+
+.menu {
+    margin-top: -4rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: #f6f6f6;
+    z-index: 1;
+    position: relative;
+    width: 100%;
+}
+
+.menu-header {
+    padding: 1rem 2rem 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    i {
+    font-size: x-large;
+        &:hover {
+        background-image: linear-gradient(#9356DC, #FF79DA);
+        transition: all 600ms;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-weight: 900;
+        cursor: pointer;
+        }
+    }
+}
+
+.menu-title {
+    font-family: Shrikhand,"cursive";
+}
+
+
+.submenus {
+    overflow: hidden;
+    display: grid;
+    padding: 10px;
+    row-gap: 10px;
+}
+
+.submenu {
+    padding-left: 10px;
+}
+
+
+.submenu-title {
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 0.5rem;
+    font-weight: 400;
+
+    &::after {
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 45px;
+    background-color: #99E2D0;
+    top: 23px;
+    left: 0;
+    }
+}
+
+
+.command {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.button-command {
+    border: 0;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 100px;
+    color: #fff;
+    background-color: #686868;
+    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 768px){
+
+    .submenus {
+        display: flex;
+        flex-direction: row;
+
+}
+ .submenu {
+     grid-template-columns: repeat(4,1fr);
+     column-gap: 1rem;
+     display: flex;
+     flex-direction: column;
+     flex: 1;
+
+ }
+
+}
+

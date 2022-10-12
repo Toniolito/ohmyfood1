@@ -1,0 +1,73 @@
+body {
+    margin:0;
+    padding: 0;
+}
+
+
+
+/*Animation sous-menus*/
+
+@keyframes menu-animation{
+    0% {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-10px);
+        opacity: 1;
+    }
+}
+
+.submenu_1
+{
+    animation: menu-animation 2s 200ms;
+    animation-fill-mode: both;
+    width: 100%;
+    padding: 10px;
+}
+ 
+.submenu_2 {
+    animation: menu-animation 2s 500ms;
+    animation-fill-mode: both;
+    width: 100%;
+    padding: 10px;
+
+}
+.submenu_3 {
+    animation: menu-animation 2s 800ms;
+    animation-fill-mode: both;
+    width: 100%;
+    padding: 10px;
+}
+
+
+/* Animation du loader */
+@keyframes spin{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes time{
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+/* Animation du menu */
+@keyframes menu-animation{
+    0% {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-10px);
+        opacity: 1;
+    }
+}

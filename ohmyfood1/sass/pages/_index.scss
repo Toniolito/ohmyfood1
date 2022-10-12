@@ -1,0 +1,285 @@
+/* Partie Info*/
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(221, 221, 221);
+    font-family: "Roboto";
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+    padding: 15px 0px;
+    border-top: #dbdbdb solid 2px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    width: 100%;
+    text-align: center;
+    
+    .h2 {
+        font-weight: 800;
+        margin-top: 30px;
+        padding: 0px 20px;
+    }
+    .p {
+        font-weight: 300;
+        padding: 0px 15px;
+    }
+
+}
+/* Partie Fonctionnement*/
+
+.function-general {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    h2{
+    margin-left: 15px;
+    }
+}
+    
+.function-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+   
+ 
+}
+.function__card {
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    height: 60px;
+    box-shadow: 1px 2px 8px #c1c1c1;
+    margin: 15px;
+    &:hover {
+        background-color: $light-color-primary;
+        cursor: pointer;
+
+    }
+ 
+}
+
+.function__card-number
+{
+    position: absolute;
+    text-align: center;
+    font-size: 14px;
+    left: -10px;
+    padding-top: 5px;
+    height: 20px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #9356DC;
+    color: white;
+}
+.function__card i {
+    color: grey;
+    margin-left: 30px;
+    width: 20px;
+}
+.function__card p {
+    margin-left: 20px;
+}
+
+
+/* Partie Restaurants */
+.restaurants {
+    background-color: #f4f4f4;
+    padding: 2rem 1rem;
+}
+
+.restaurants-list {
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+        .card {
+        width: 100%;
+        max-width: 700px;
+        overflow: hidden;
+        position: relative;
+        margin: 20px auto;
+        border-radius: 20px; 
+        background-color: white;
+        box-shadow: 1px 2px 8px #c1c1c1;
+            
+        
+            .card-image img {
+                position: relative;
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-style: none;
+            }
+            
+            .card-new {
+                background-color: #99e2d0;
+                color: #1b6150;
+                padding: 0.5rem;
+                border-radius: 0.125rem;
+                position: absolute;
+                top: 1rem;
+                right: 0.75rem;
+            }
+        
+            .card-container {
+                display : flex;
+                align-items: center;
+                overflow: hidden;
+                
+                &:hover {
+                    .card-order {
+                        margin-right: 0px;
+                        transition-duration: 500ms;
+                        
+                    }
+                    .card-order__icon {
+                        transition-duration: 500ms;
+                        transform: rotate(360deg);
+
+                    }
+                }
+                .card-info {
+                    font-weight: 400;
+                    flex: 1;
+                    padding-left: 10px;
+                
+        
+        
+                    .card__like{
+                    position: relative;
+                    font-size: 30px;
+                    color: transparent;
+                    margin-right: 100px;
+                    
+                    } 
+                }
+                    .card-order {
+                        width: 75px;
+                        margin-right: -75px;
+                        height: 140px;
+                        background-color: #99e2d0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        
+                    }
+                    
+                    .card-order__icon {
+                        height: 1.6rem;
+                        width: 1.6rem;
+                        background-color: #fff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 100px;
+                        font-weight: 900;
+                    }
+                   
+             }
+
+        }
+
+        .card-price {
+            padding-right: 10px;
+        }
+
+/*Animation du like */
+
+    .like i {
+        position: absolute;
+        right: 1rem;
+        bottom: 2rem;
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .like i:hover {
+        background-image: linear-gradient(#9356DC, #FF79DA);
+        transition: all 600ms;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-weight: 900;
+    }
+
+/*Fin animation*/
+
+        .command {
+            padding-bottom: 20px;
+        }
+
+/*Footer*/
+
+footer {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 5px 0px;
+
+    
+    .footer-logo {
+        color: #fff;
+        font-family: Shrikhand,"cursive";
+        font-size: 1.2rem;
+        margin: 0 0 1rem;
+   }
+
+.footer__container {
+    margin-left: 30px;
+
+    i {
+    width: 10px;
+    margin-right: 20px;
+    }
+    p {
+    line-height: 15px;
+    word-break: keep-all;
+    }
+    a {
+        color: white;
+    }
+}
+}
+
+   @media (min-width: 800px)
+   {
+
+    .function-menu {
+        
+        flex-direction: row;
+        row-gap: 15px;
+       justify-content: space-between;
+    }
+
+    .function__card {
+        max-width: 500px;
+    }
+    .restaurants-list {
+        grid-template-columns: repeat(2,1fr);
+    
+    }
+
+    .submenus {
+       justify-content: space-between;
+   }
+   }
